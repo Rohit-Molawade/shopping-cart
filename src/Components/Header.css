@@ -3,8 +3,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: rgba(18, 18, 18, 0);
-  color: white;
+}
+
+.Header-shop {
+  background-color: #A555EC;
 }
 
 .destiny_logo {
@@ -24,7 +26,6 @@
 
 .title > a {
   text-decoration: none;
-  color: white;
 }
 
 .links {
@@ -33,16 +34,20 @@
   justify-content: center;
   width: 50%;
   font-family: 'Sofia Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .links > a {
   text-decoration: none;
-  color: white;
   padding: 10px;
   margin: 20px;
 }
 
 .links > a:hover {
+  border-bottom: 2px white solid;
+  color: white;
+}
+
+.active-link {
   border-bottom: 2px white solid;
 }

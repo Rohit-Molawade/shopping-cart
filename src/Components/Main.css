@@ -39,11 +39,10 @@
   margin-right: 220px;
 }
 
-.shop-button:hover{
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    
+.shop-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
 .right-div {

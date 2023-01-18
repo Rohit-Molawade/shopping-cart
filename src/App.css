@@ -2,6 +2,14 @@
   height: 100vh;
   display: grid;
   grid-template-rows: minmax(60px, 90px) 1fr minmax(60px, 8px);
-  background: linear-gradient(35deg, #ff4656ee, #0a141eee 80%), url(./images/hero-bg.jpg) center no-repeat;
+}
+
+.App-dark {
+  background-color: #FFFFD0;
+  color: black;
+}
+
+.App-normal {
+  background: linear-gradient(35deg, rgba(255, 70, 86, 0.933), #0a141eee 80%), url(./images/hero-bg.jpg) center no-repeat;
   color: white;
 }
