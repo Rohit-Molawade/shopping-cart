@@ -1,12 +1,7 @@
 .App {
   height: 100vh;
   display: grid;
-  grid-template-rows: minmax(60px, 90px) 1fr minmax(60px, 8px);
-}
-
-.App-dark {
-  background-color: #FFFFD0;
-  color: black;
+  grid-template-rows: 80px 1fr minmax(60px, 8px);
 }
 
 .App-normal {

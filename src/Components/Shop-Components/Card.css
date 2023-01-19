@@ -1,0 +1,70 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 15px rgba(207, 42, 56, 0.933) solid;
+  height: auto;
+  width: 500px;
+  overflow: hidden;
+  margin: 40px;
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.4) 0px 30px 60px -12px, rgba(0, 0, 0, 0.5) 0px 18px 36px -18px;
+}
+
+.info {
+  background-color: rgba(207, 42, 56, 0.933);
+  width: 100%;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Montserrat';
+  font-size: 1.8rem;
+}
+
+.add-button {
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px white solid;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+}
+
+#displayIcon {
+  width: 400px;
+  height: 150px;
+  margin: 20px;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+input[type='Number'] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  text-align: center;
+  width: 50px;
+  padding: 5px 5px;
+  font-size: 1.3rem;
+  font-family: 'Sofia-sans';
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+}

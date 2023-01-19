@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  padding: 50px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
