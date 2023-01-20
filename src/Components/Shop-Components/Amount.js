@@ -4,7 +4,7 @@ import './Amount.css';
 import { useState } from 'react';
 
 const Amount = (props) => {
-  const { Name, Image, Cost, Category, addItem, itemArray, setWarning } = props;
+  const { Name, Image, Cost, Category, addItem, itemArray, setWarning, setItemArray } = props;
   const [amount, setAmount] = useState(1);
 
   const addAmount = () => {
@@ -16,8 +16,20 @@ const Amount = (props) => {
   };
 
   const handleClick = () => {
-    if (itemArray.some((item) => item.Name === Name)) setWarning(true);
-    addItem({ Name: Name, Image: Image, Cost: Cost, Category: Category, Amount: amount });
+    if (itemArray.some((item) => item.Name === Name)) {
+      setItemArray(
+        itemArray.map((item) => {
+          if (item.Name === Name) {
+            item.Amount = item.Amount + amount;
+          }
+          return item;
+        })
+      );
+      setAmount(1);
+    } else {
+      addItem({ Name: Name, Image: Image, Cost: Cost, Category: Category, Amount: amount })
+      setAmount(1);
+    }
   };
 
   return (

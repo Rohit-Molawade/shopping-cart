@@ -1,0 +1,17 @@
+.Carousel-container {
+  position: relative;
+  margin: 25px;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.image {
+	height: 400px;
+	width: 650px;
+    border: 1px white solid;
+}
+
+.img {
+	height: 400px;
+	width: 650px;
+}

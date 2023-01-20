@@ -3,7 +3,7 @@ import './Shop.css';
 import Card from './Shop-Components/Card';
 
 const Shop = (prop) => {
-  const { itemArray, addItem } = prop;
+  const { itemArray, addItem, setItemArray } = prop;
   const [imageArray, setimageArray] = useState([]);
 
   function processResponse(data) {
@@ -38,7 +38,18 @@ const Shop = (prop) => {
     <div className="Shop">
       <div className="card-container">
         {imageArray.map((item, index) => {
-          return <Card Name={item.Name} Image={item.Image} Cost={item.Cost} Category={item.Category} addItem={addItem} itemArray={itemArray} key={index} />;
+          return (
+            <Card
+              Name={item.Name}
+              Image={item.Image}
+              Cost={item.Cost}
+              Category={item.Category}
+              addItem={addItem}
+              itemArray={itemArray}
+              setItemArray={setItemArray}
+              key={index}
+            />
+          );
         })}
       </div>
     </div>

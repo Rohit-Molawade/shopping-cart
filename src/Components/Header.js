@@ -1,9 +1,19 @@
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
+import cart_icon from '../images/cart.png';
 import valorant_logo from '../images/valorant-logo.png';
 
-const Header = () => {
+const Header = (props) => {
   const location = useLocation();
+  const itemArray = props.itemArray;
+
+  const findCount = () => {
+    let count = 0;
+    itemArray.forEach((item) => {
+      count = count + item.Amount;
+    });
+    return count;
+  };
 
   return (
     <div className={`Header ${location.pathname === '/shop' ? 'Header-shop' : null}`}>
@@ -23,6 +33,12 @@ const Header = () => {
         <Link to={'/about'} className={location.pathname === '/about' ? 'active-link' : null}>
           ABOUT
         </Link>
+        <div className="cart-container">
+          <Link to={'/cart'}>
+            <img src={cart_icon} alt="Cart" className="cart" />
+            <div className="cart-amount">{findCount()}</div>
+          </Link>
+        </div>
       </div>
     </div>
   );
