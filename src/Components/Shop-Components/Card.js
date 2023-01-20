@@ -1,25 +1,24 @@
 import './Card.css';
-import plus from '../../images/plus.png';
-import minus from '../../images/minus.png';
+import Amount from './Amount';
+import { useState } from 'react';
 
 const Card = (props) => {
-  const item = props;
-  const { Name, Image, Cost, Category } = props;
-  console.log(item.Name, Name, Image, Cost, Category);
+  const { Name, Image, Cost, Category, addItem, itemArray } = props;
+
+  const [warning, setWarning] = useState(false);
+
   return (
     <div className="card">
       <img src={Image} alt={Name} id="displayIcon" />
       <div className="info">
         <span>{Name}</span>
-        <div className="amount">
-          <img src={plus} alt="Add" />
-          <input type="number" placeholder="1" disabled />
-          <img src={minus} alt="Minus" />
-        </div>
-        <button type="button" className="add-button">
-          ADD
-        </button>
+        <Amount Name={Name} Image={Image} Cost={Cost} Category={Category} addItem={addItem} itemArray={itemArray} setWarning={setWarning} />
       </div>
+      {warning === true ? (
+        <div className="warning">
+          <p>ITEM ALREADY ADDED INSIDE CART</p>
+        </div>
+      ) : null}
     </div>
   );
 };

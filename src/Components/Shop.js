@@ -6,10 +6,6 @@ const Shop = (prop) => {
   const { itemArray, addItem } = prop;
   const [imageArray, setimageArray] = useState([]);
 
-  function HandleAddItem() {
-    addItem({ asd: 'asdsa', asda: 'asdas' });
-  }
-
   function processResponse(data) {
     const processed_data = data.map((item) => {
       return {
@@ -42,7 +38,7 @@ const Shop = (prop) => {
     <div className="Shop">
       <div className="card-container">
         {imageArray.map((item, index) => {
-          return <Card Name={item.Name} Image={item.Image} Cost={item.Cost} Category={item.Category} key={index} />;
+          return <Card Name={item.Name} Image={item.Image} Cost={item.Cost} Category={item.Category} addItem={addItem} itemArray={itemArray} key={index} />;
         })}
       </div>
     </div>
