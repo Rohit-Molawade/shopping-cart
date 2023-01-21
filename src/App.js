@@ -14,13 +14,14 @@ function App() {
   function addItem(item) {
     setItemArray([...itemArray, item]);
   }
+  
   return (
     <div className={`App ${location.pathname === '/shop' ? 'App-dark' : 'App-normal'}`}>
       <Header itemArray={itemArray} />
       <Routes>
         <Route element={<Main />} path="/" />
         <Route element={<Shop itemArray={itemArray} addItem={addItem} setItemArray={setItemArray} />} path="/Shop" />
-        <Route element={<Cart />} path="/Cart" />
+        <Route element={<Cart itemArray={itemArray} setItemArray={setItemArray} />} path="/Cart" />
       </Routes>
       <Footer />
     </div>

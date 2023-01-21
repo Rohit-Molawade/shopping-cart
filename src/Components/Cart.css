@@ -1,6 +1,6 @@
 .Cart {
   display: grid;
-  grid-template-rows: 1fr 3fr 80px;
+  grid-template-rows: 200px 3fr 80px;
   background-color: #f8f5f2;
   color: black;
 }
@@ -14,7 +14,64 @@
   font-weight: bolder;
   line-height: 10px;
   font-size: 2.4rem;
-  padding-top: 30px;
+  padding-top: 10px;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 50px;
+  align-items: center;
+  justify-items: center;
+  width: 75%;
+  background-color: black;
+  color: white;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.item-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  overflow: auto;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 50px;
+  align-items: center;
+  justify-items: center;
+  background-color: #f2eeeb;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+
+.item-heading {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.item-name {
+  font-family: 'valorant';
+  font-size: 1.4rem;
+}
+
+.item-image {
+  width: 250px;
+  height: 100px;
 }
 
 .bottom {
@@ -25,7 +82,7 @@
   width: 100%;
 }
 
-.amount-container {
+.total-amount-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +97,7 @@
   overflow: hidden;
 }
 
-.buttons-container > button {
+.buttons-container > a > button {
   appearance: none;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid black;
@@ -52,7 +109,7 @@
   border-radius: 5px;
 }
 
-.buttons-container > button:hover {
+.buttons-container > a > button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
