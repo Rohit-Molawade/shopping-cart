@@ -1,27 +1,17 @@
-.amount-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .amount {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 40%;
-  margin-left: 70px;
+  width: 100%;
 }
 
-input[type='Number'] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px rgba(255, 255, 255, 0.8) solid;
-  text-align: center;
-  width: 50px;
-  padding: 5px 5px;
-  font-size: 1.3rem;
-  font-family: 'Sofia-sans';
-  color: white;
+.amount > img{
+  width: 18px;
+  height: 18px;
+}
+
+.amount-display {
+  font-size: 1.5rem;
 }
 
 input::-webkit-inner-spin-button {
@@ -31,19 +21,4 @@ input::-webkit-inner-spin-button {
 
 img {
   cursor: pointer;
-}
-
-.add-button {
-  appearance: none;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px white solid;
-  padding: 10px 25px;
-  color: white;
-  cursor: pointer;
-}
-
-.add-button:hover {
-  cursor: pointer;
-  background-color: black;
-  color: white;
 }

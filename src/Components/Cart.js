@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Cart.css';
 import Item from './Item';
 import { Link } from 'react-router-dom';
@@ -6,6 +6,18 @@ import { Link } from 'react-router-dom';
 const Cart = (props) => {
   const { itemArray, setItemArray } = props;
   const [totalAmount, setTotalAmount] = useState(0);
+
+  useEffect(() => {
+    generateTotal();
+  }, [itemArray]);
+
+  const generateTotal = () => {
+    setTotalAmount(0);
+    itemArray.forEach((item) => {
+      setTotalAmount((prevAmount) => prevAmount + item.SubTotal);
+      console.log(item.SubTotal + '  ' + totalAmount);
+    });
+  };
 
   return (
     <div className="Cart">
@@ -22,7 +34,7 @@ const Cart = (props) => {
         </div>
         <div className="item-container">
           {itemArray.map((item) => {
-            return <Item key={item.Name} item={item} setItemArray={setItemArray} setTotalAmount={setTotalAmount} />;
+            return <Item key={item.Name} item={item} setItemArray={setItemArray} setTotalAmount={setTotalAmount} itemArray={itemArray} />;
           })}
         </div>
       </div>

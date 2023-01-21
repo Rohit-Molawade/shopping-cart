@@ -38,3 +38,18 @@ img {
   width: 16px;
   height: 16px;
 }
+
+.add-button {
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px white solid;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
