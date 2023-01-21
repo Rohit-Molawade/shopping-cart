@@ -57,7 +57,7 @@
   height: 42px;
 }
 
-.cart-container{
+.cart-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@
   padding-left: 20px;
 }
 
-.cart-amount{
+.cart-amount {
   position: absolute;
   top: 22px;
   background-color: white;

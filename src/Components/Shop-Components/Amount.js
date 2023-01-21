@@ -27,7 +27,7 @@ const Amount = (props) => {
       );
       setAmount(1);
     } else {
-      addItem({ Name: Name, Image: Image, Cost: Cost, Category: Category, Amount: amount })
+      addItem({ Name: Name, Image: Image, Cost: Cost, Category: Category, Amount: amount });
       setAmount(1);
     }
   };

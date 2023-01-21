@@ -1,0 +1,68 @@
+.Cart {
+  display: grid;
+  grid-template-rows: 1fr 3fr 80px;
+  background-color: #f8f5f2;
+  color: black;
+}
+
+.top {
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  line-height: 10px;
+  font-size: 2.4rem;
+  padding-top: 30px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+.amount-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  overflow: hidden;
+}
+
+.buttons-container > button {
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  padding: 10px 40px;
+  font-family: 'Sofia Sans';
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.buttons-container > button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.total-amount {
+  margin-left: 30px;
+  padding: 5px 20px;
+  font-family: 'Sofia Sans';
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+}

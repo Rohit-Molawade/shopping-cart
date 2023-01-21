@@ -1,4 +1,4 @@
-.amount-container{
+.amount-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,45 +6,44 @@
 }
 
 .amount {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 40%;
-    margin-left: 70px;
-  }
-  
-  input[type='Number'] {
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px rgba(255, 255, 255, 0.8) solid;
-    text-align: center;
-    width: 50px;
-    padding: 5px 5px;
-    font-size: 1.3rem;
-    font-family: 'Sofia-sans';
-    color: white;
-  }
-  
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  margin-left: 70px;
+}
 
-  img{
-    cursor: pointer;
-  }
-  
-  .add-button {
-    appearance: none;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px white solid;
-    padding: 10px 25px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .add-button:hover{
-      cursor: pointer;
-      background-color: black;
-      color: white;
-  }
-  
+input[type='Number'] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px rgba(255, 255, 255, 0.8) solid;
+  text-align: center;
+  width: 50px;
+  padding: 5px 5px;
+  font-size: 1.3rem;
+  font-family: 'Sofia-sans';
+  color: white;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+img {
+  cursor: pointer;
+}
+
+.add-button {
+  appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px white solid;
+  padding: 10px 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
