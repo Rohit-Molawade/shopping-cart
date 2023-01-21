@@ -1,8 +1,42 @@
 .Cart {
   display: grid;
-  grid-template-rows: 200px 3fr 80px;
+  grid-template-rows: 150px 3fr 120px;
   background-color: #f8f5f2;
   color: black;
+}
+
+.empty-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8f5f2;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 1.4rem;
+}
+
+.empty-cart > h1 {
+  background-color: rgba(207, 42, 56, 1);
+  color: white;
+  padding: 20px;
+}
+
+.empty-cart > a > button {
+  appearance: none;
+  background-color: white;
+  border: 3px solid black;
+  padding: 10px 40px;
+  font-family: 'Sofia Sans';
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.empty-cart > a > button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 3px white solid;
 }
 
 .top {
@@ -24,7 +58,7 @@
   flex-direction: column;
 }
 
-.heading{
+.heading {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr 1fr 50px;
   align-items: center;
@@ -86,7 +120,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 42%;
 }
 
 .buttons-container {
